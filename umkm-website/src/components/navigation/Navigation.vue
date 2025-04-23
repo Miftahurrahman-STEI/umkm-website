@@ -31,7 +31,7 @@ export default {
 
 <template>
     <header class="flex justify-center items-center w-full h-[66px] top-0 fixed">
-        <nav v-if="showNavbar" class="navbar w-full h-full bg-white flex justify-around items-center" :class="{ 'navbar--hidden': !showNavbar }">
+        <nav v-if="showNavbar" class="navbar border-b-4 border-gray-100 w-full h-full bg-white flex justify-around items-center" :class="{ 'navbar--hidden': !showNavbar }">
             <div class="menu flex justify-center items-center">
                 <div class="flex justify-center items-center mr-[70px]">
                     <img src="../../assets/image 13.png" alt="brand" width="42px" height="42px">
@@ -47,11 +47,12 @@ export default {
                 <form class="w-[200px] h-[35px]">
                     <div>
                         <input
+                            placeholder="Search..."
                             type="text" 
                             name="text"
                             autocomplete="off"
-                            id="search-input" 
-                            class="w-[200px] h-[35px] bg-gray-100 p-4 rounded-3xl outline-none" 
+                            id="search-input"
+                            class="w-[200px] h-[35px] bg-none p-4 rounded-3xl outline" 
                         />
                     </div>
                 </form>
